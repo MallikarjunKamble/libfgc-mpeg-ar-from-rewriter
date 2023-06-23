@@ -1,14 +1,14 @@
-/* 	Copyright (c) [2020]-[2023] Ittiam Systems Pvt. Ltd.
+/* Copyright (c) [2020]-[2023] Ittiam Systems Pvt. Ltd.
    All rights reserved.
    Redistribution and use in source and binary forms, with or without
    modification, are permitted (subject to the limitations in the
    disclaimer below) provided that the following conditions are met:
-   •	Redistributions of source code must retain the above copyright
+   ï¿½    Redistributions of source code must retain the above copyright
    notice, this list of conditions and the following disclaimer.
-   •	Redistributions in binary form must reproduce the above copyright
+   ï¿½    Redistributions in binary form must reproduce the above copyright
    notice, this list of conditions and the following disclaimer in the
    documentation and/or other materials provided with the distribution.
-   •	None of the names of Ittiam Systems Pvt. Ltd., its affiliates,
+   ï¿½    None of the names of Ittiam Systems Pvt. Ltd., its affiliates,
    investors, business partners, nor the names of its contributors may be
    used to endorse or promote products derived from this software without
    specific prior written permission.
@@ -27,9 +27,9 @@
    EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
    This Software is an implementation of the AVC/H.264
-   standard by Ittiam Systems Pvt. Ltd. (“Ittiam”).
+   standard by Ittiam Systems Pvt. Ltd. (ï¿½Ittiamï¿½).
    Additional patent licenses may be required for this Software,
-   including, but not limited to, a license from MPEG LA’s AVC/H.264
+   including, but not limited to, a license from MPEG LAï¿½s AVC/H.264
    licensing program (see https://www.mpegla.com/programs/avc-h-264/).
 
    NOTWITHSTANDING ANYTHING TO THE CONTRARY, THIS DOES NOT GRANT ANY
@@ -315,7 +315,7 @@ WORD32 i264_byte_align(bitstrm_t  *ps_bitstream_buf)
     /* Check for byte alignment */
     if (i4_bits_left_in_cw & 0x7)
     {
-        UWORD8	u1_len = (i4_bits_left_in_cw & 0x7);
+        UWORD8    u1_len = (i4_bits_left_in_cw & 0x7);
         /* Put cabac_alignment_one_bit to buffer */
         i264_put_bits(ps_bitstream_buf, ((1 << u1_len) - 1), u1_len, 0);
     }

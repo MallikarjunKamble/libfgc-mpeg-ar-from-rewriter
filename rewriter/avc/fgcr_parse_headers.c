@@ -1,14 +1,14 @@
-/* 	Copyright (c) [2020]-[2023] Ittiam Systems Pvt. Ltd.
+/* Copyright (c) [2020]-[2023] Ittiam Systems Pvt. Ltd.
    All rights reserved.
    Redistribution and use in source and binary forms, with or without
    modification, are permitted (subject to the limitations in the
    disclaimer below) provided that the following conditions are met:
-   •	Redistributions of source code must retain the above copyright
+   ï¿½    Redistributions of source code must retain the above copyright
    notice, this list of conditions and the following disclaimer.
-   •	Redistributions in binary form must reproduce the above copyright
+   ï¿½    Redistributions in binary form must reproduce the above copyright
    notice, this list of conditions and the following disclaimer in the
    documentation and/or other materials provided with the distribution.
-   •	None of the names of Ittiam Systems Pvt. Ltd., its affiliates,
+   ï¿½    None of the names of Ittiam Systems Pvt. Ltd., its affiliates,
    investors, business partners, nor the names of its contributors may be
    used to endorse or promote products derived from this software without
    specific prior written permission.
@@ -27,9 +27,9 @@
    EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
    This Software is an implementation of the AVC/H.264
-   standard by Ittiam Systems Pvt. Ltd. (“Ittiam”).
+   standard by Ittiam Systems Pvt. Ltd. (ï¿½Ittiamï¿½).
    Additional patent licenses may be required for this Software,
-   including, but not limited to, a license from MPEG LA’s AVC/H.264
+   including, but not limited to, a license from MPEG LAï¿½s AVC/H.264
    licensing program (see https://www.mpegla.com/programs/avc-h-264/).
 
    NOTWITHSTANDING ANYTHING TO THE CONTRARY, THIS DOES NOT GRANT ANY
@@ -211,8 +211,8 @@ WORD32 ih264d_parse_nal_unit_for_rewriter(iv_obj_t *dec_hdl,
             // if any other nal unit other than slice nal is encountered in between a
             // frame break out of loop without consuming header
             if ((ps_dec->u2_total_mbs_coded < (ps_dec->u2_total_mbs_coded)) &&
-				(u1_nal_unit_type > IDR_SLICE_NAL))
-			{
+                (u1_nal_unit_type > IDR_SLICE_NAL))
+            {
                 return ERROR_INCOMPLETE_FRAME;
             }
             ps_dec->u1_nal_unit_type = u1_nal_unit_type;
@@ -307,7 +307,7 @@ WORD32 ih264d_parse_nal_unit_for_rewriter(iv_obj_t *dec_hdl,
                                     ps_bitstream.i4_zero_bytes_run = 0;
                                     ps_bitstream.u4_max_strm_size = 10000;
                                     i_status = i264_generate_sei_message(&ps_bitstream,
-										ps_dec->s_fgs_rewrite_prms);
+                                        ps_dec->s_fgs_rewrite_prms);
                                     if (i_status != OK)
                                     {
                                         return i_status;
@@ -317,7 +317,7 @@ WORD32 ih264d_parse_nal_unit_for_rewriter(iv_obj_t *dec_hdl,
                                     memcpy(*pu1_upd_buf, temp_holder, u4_length + 4);
                                     *pu1_upd_buf += u4_length + 4;
                                     ps_dec_op->u4_num_bytes_generated +=
-										u4_length + 4 + ps_bitstream.u4_strm_buf_offset;
+                                        u4_length + 4 + ps_bitstream.u4_strm_buf_offset;
                                 }
                                 else
                                 {

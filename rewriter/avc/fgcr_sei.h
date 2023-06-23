@@ -1,14 +1,14 @@
-/* 	Copyright (c) [2020]-[2023] Ittiam Systems Pvt. Ltd.
+/* Copyright (c) [2020]-[2023] Ittiam Systems Pvt. Ltd.
    All rights reserved.
    Redistribution and use in source and binary forms, with or without
    modification, are permitted (subject to the limitations in the
    disclaimer below) provided that the following conditions are met:
-   •	Redistributions of source code must retain the above copyright
+   ï¿½    Redistributions of source code must retain the above copyright
    notice, this list of conditions and the following disclaimer.
-   •	Redistributions in binary form must reproduce the above copyright
+   ï¿½    Redistributions in binary form must reproduce the above copyright
    notice, this list of conditions and the following disclaimer in the
    documentation and/or other materials provided with the distribution.
-   •	None of the names of Ittiam Systems Pvt. Ltd., its affiliates,
+   ï¿½    None of the names of Ittiam Systems Pvt. Ltd., its affiliates,
    investors, business partners, nor the names of its contributors may be
    used to endorse or promote products derived from this software without
    specific prior written permission.
@@ -27,9 +27,9 @@
    EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
    This Software is an implementation of the AVC/H.264
-   standard by Ittiam Systems Pvt. Ltd. (“Ittiam”).
+   standard by Ittiam Systems Pvt. Ltd. (ï¿½Ittiamï¿½).
    Additional patent licenses may be required for this Software,
-   including, but not limited to, a license from MPEG LA’s AVC/H.264
+   including, but not limited to, a license from MPEG LAï¿½s AVC/H.264
    licensing program (see https://www.mpegla.com/programs/avc-h-264/).
 
    NOTWITHSTANDING ANYTHING TO THE CONTRARY, THIS DOES NOT GRANT ANY
@@ -72,26 +72,26 @@ WORD32 ih264d_parse_sei_message(struct _DecStruct *ps_dec,
  */
 typedef struct
 {
-	UWORD32 u4_fgc_sei_present_flag;
-	UWORD32 u4_idr_pic_id;
-	UWORD8 u1_film_grain_characteristics_cancel_flag;
-	UWORD8 u1_film_grain_model_id;
-	UWORD8 u1_separate_colour_description_present_flag;
-	UWORD8 u1_film_grain_bit_depth_luma_minus8;
-	UWORD8 u1_film_grain_bit_depth_chroma_minus8;
-	UWORD8 u1_film_grain_full_range_flag;
-	UWORD8 u1_film_grain_colour_primaries;
-	UWORD8 u1_film_grain_transfer_characteristics;
-	UWORD8 u1_film_grain_matrix_coefficients;
-	UWORD8 u1_blending_mode_id;
-	UWORD8 u1_log2_scale_factor;
-	UWORD8 au1_comp_model_present_flag[SEI_FGC_NUM_COLOUR_COMPONENTS];
-	UWORD8 au1_num_intensity_intervals_minus1[SEI_FGC_NUM_COLOUR_COMPONENTS];
-	UWORD8 au1_num_model_values_minus1[SEI_FGC_NUM_COLOUR_COMPONENTS];
-	UWORD8 au1_intensity_interval_lower_bound[SEI_FGC_NUM_COLOUR_COMPONENTS][SEI_FGC_MAX_NUM_INTENSITY_INTERVALS];
-	UWORD8 au1_intensity_interval_upper_bound[SEI_FGC_NUM_COLOUR_COMPONENTS][SEI_FGC_MAX_NUM_INTENSITY_INTERVALS];
-	WORD32 ai4_comp_model_value[SEI_FGC_NUM_COLOUR_COMPONENTS][SEI_FGC_MAX_NUM_INTENSITY_INTERVALS][SEI_FGC_MAX_NUM_MODEL_VALUES];
-	UWORD32 u4_film_grain_characteristics_repetition_period;
+    UWORD32 u4_fgc_sei_present_flag;
+    UWORD32 u4_idr_pic_id;
+    UWORD8 u1_film_grain_characteristics_cancel_flag;
+    UWORD8 u1_film_grain_model_id;
+    UWORD8 u1_separate_colour_description_present_flag;
+    UWORD8 u1_film_grain_bit_depth_luma_minus8;
+    UWORD8 u1_film_grain_bit_depth_chroma_minus8;
+    UWORD8 u1_film_grain_full_range_flag;
+    UWORD8 u1_film_grain_colour_primaries;
+    UWORD8 u1_film_grain_transfer_characteristics;
+    UWORD8 u1_film_grain_matrix_coefficients;
+    UWORD8 u1_blending_mode_id;
+    UWORD8 u1_log2_scale_factor;
+    UWORD8 au1_comp_model_present_flag[SEI_FGC_NUM_COLOUR_COMPONENTS];
+    UWORD8 au1_num_intensity_intervals_minus1[SEI_FGC_NUM_COLOUR_COMPONENTS];
+    UWORD8 au1_num_model_values_minus1[SEI_FGC_NUM_COLOUR_COMPONENTS];
+    UWORD8 au1_intensity_interval_lower_bound[SEI_FGC_NUM_COLOUR_COMPONENTS][SEI_FGC_MAX_NUM_INTENSITY_INTERVALS];
+    UWORD8 au1_intensity_interval_upper_bound[SEI_FGC_NUM_COLOUR_COMPONENTS][SEI_FGC_MAX_NUM_INTENSITY_INTERVALS];
+    WORD32 ai4_comp_model_value[SEI_FGC_NUM_COLOUR_COMPONENTS][SEI_FGC_MAX_NUM_INTENSITY_INTERVALS][SEI_FGC_MAX_NUM_MODEL_VALUES];
+    UWORD32 u4_film_grain_characteristics_repetition_period;
 
 }sei_fgc_params_t;
 

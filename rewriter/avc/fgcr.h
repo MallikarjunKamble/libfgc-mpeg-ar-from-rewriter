@@ -1,14 +1,14 @@
-/* 	Copyright (c) [2020]-[2023] Ittiam Systems Pvt. Ltd.
+/* Copyright (c) [2020]-[2023] Ittiam Systems Pvt. Ltd.
    All rights reserved.
    Redistribution and use in source and binary forms, with or without
    modification, are permitted (subject to the limitations in the
    disclaimer below) provided that the following conditions are met:
-   •	Redistributions of source code must retain the above copyright
+   ï¿½    Redistributions of source code must retain the above copyright
    notice, this list of conditions and the following disclaimer.
-   •	Redistributions in binary form must reproduce the above copyright
+   ï¿½    Redistributions in binary form must reproduce the above copyright
    notice, this list of conditions and the following disclaimer in the
    documentation and/or other materials provided with the distribution.
-   •	None of the names of Ittiam Systems Pvt. Ltd., its affiliates,
+   ï¿½    None of the names of Ittiam Systems Pvt. Ltd., its affiliates,
    investors, business partners, nor the names of its contributors may be
    used to endorse or promote products derived from this software without
    specific prior written permission.
@@ -27,9 +27,9 @@
    EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
    This Software is an implementation of the AVC/H.264
-   standard by Ittiam Systems Pvt. Ltd. (“Ittiam”).
+   standard by Ittiam Systems Pvt. Ltd. (ï¿½Ittiamï¿½).
    Additional patent licenses may be required for this Software,
-   including, but not limited to, a license from MPEG LA’s AVC/H.264
+   including, but not limited to, a license from MPEG LAï¿½s AVC/H.264
    licensing program (see https://www.mpegla.com/programs/avc-h-264/).
 
    NOTWITHSTANDING ANYTHING TO THE CONTRARY, THIS DOES NOT GRANT ANY
@@ -260,20 +260,20 @@ typedef struct {
 }fgcr_create_ip_t;
 
 typedef struct{
-	/**
-	 * u4_size of the structure
-	 */
-	UWORD32                                 u4_size;
+    /**
+     * u4_size of the structure
+     */
+    UWORD32                                 u4_size;
 
-	/**
-	 * u4_error_code
-	 */
-	UWORD32                                 u4_error_code;
+    /**
+     * u4_error_code
+     */
+    UWORD32                                 u4_error_code;
 
-	/**
-	 * Codec Handle
-	 */
-	void                                    *pv_handle;
+    /**
+     * Codec Handle
+     */
+    void                                    *pv_handle;
 }fgcr_create_op_t;
 
 /*****************************************************************************/
@@ -386,12 +386,12 @@ typedef struct{
     /**
      * u4_size of the structure
      */
-	UWORD32                                     u4_size;
+    UWORD32                                     u4_size;
 
     /**
      * u4_error_code
      */
-	UWORD32                                     u4_error_code;
+    UWORD32                                     u4_error_code;
 }fgcr_ctl_set_config_op_t;
 
 /*****************************************************************************/
@@ -438,15 +438,15 @@ typedef struct{
 }fgcr_ctl_getversioninfo_op_t;
 
 typedef struct {
-	UWORD32                                     u4_size;
-	FGCR_API_COMMAND_TYPE_T                     e_cmd;
-	FGCR_CONTROL_API_COMMAND_TYPE_T             e_sub_cmd;
-	UWORD32                                     u4_param_value;
+    UWORD32                                     u4_size;
+    FGCR_API_COMMAND_TYPE_T                     e_cmd;
+    FGCR_CONTROL_API_COMMAND_TYPE_T             e_sub_cmd;
+    UWORD32                                     u4_param_value;
 }fgcr_ctl_set_fgs_params_ip_t;
 
 typedef struct {
-	UWORD32                                     u4_size;
-	UWORD32                                     u4_error_code;
+    UWORD32                                     u4_size;
+    UWORD32                                     u4_error_code;
 }fgcr_ctl_set_fgs_params_op_t;
 
 typedef struct
